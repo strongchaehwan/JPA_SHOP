@@ -22,7 +22,7 @@ public abstract class Item {
 
     private String name;
     private int price;
-    private int stockQuantity;
+    private int stockQuantity;//전체수량
 
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
